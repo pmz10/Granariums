@@ -1,0 +1,19 @@
+{
+  "name": "granariums",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmz10/Granariums.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmz10/Granariums/issues"
+  },
+  "homepage": "https://github.com/pmz10/Granariums#readme"
+}
