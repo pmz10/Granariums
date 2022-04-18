@@ -3,7 +3,7 @@ import React from "react";
 function App() {
   return (
     <div className="container-can">
-      <h1 className="text-center">Hola Mundo</h1>
+      <h1 className="text-center">Head                                 </h1>
       <div style={myStyles.boxStyles}>
         <div
           style={{
