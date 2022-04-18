@@ -1,55 +1,18 @@
 import React from "react";
+import Header from "./componets/Header";
 
 function App() {
   return (
     <div className="container-can">
-      <h1 className="text-center">Head                                 </h1>
-      <div style={myStyles.boxStyles}>
-        <div
-          style={{
-            width: "200px",
-            height: "40px",
-            background: "white",
-            alignSelf: "center",
-            border: "3px solid orange",
-          }}
-        >
-          <p className="text-center">Caja 1</p>
-        </div>
-        <div
-          style={{
-            width: "200px",
-            height: "40px",
-            background: "white",
-            alignSelf: "center",
-            border: "3px solid orange",
-          }}
-        >
-          <p className="text-center">Caja 2</p>
-        </div>
-        <div
-          style={{
-            width: "200px",
-            height: "40px",
-            background: "white",
-            alignSelf: "center",
-            border: "3px solid orange",
-          }}
-        >
-          <p className="text-center">Caja 3</p>
-        </div>
-        <div
-          style={{
-            width: "200px",
-            height: "40px",
-            background: "white",
-            alignSelf: "center",
-            border: "3px solid orange",
-          }}
-        >
-          <p className="text-center">Caja 4</p>
-        </div>
-      </div>
+      <Header />
+      <nav style={{background:'red'}}> 
+        <ul style={myStyles.listaNav}>
+          <li style={{padding:'0px 10px 0px 10px ', border:'3px solid navy', listStyle:'none'}} href='#'>Opciones 1</li>
+          <li style={{padding:'0px 10px 0px 10px ', border:'3px solid navy', listStyle:'none'}}>Opciones 2</li>
+          <li style={{padding:'0px 10px 0px 10px ', border:'3px solid navy', listStyle:'none'}}>Opciones 3</li>
+          <li style={{padding:'0px 10px 0px 10px ', border:'3px solid navy', listStyle:'none'}}>Opciones 4</li>
+        </ul>
+      </nav>
     </div>
   );
 }
@@ -57,12 +20,9 @@ function App() {
 export default App;
 
 let myStyles = {
-  boxStyles: {
-    width: "100%",
-    height: "100px",
-    border: "5px solid yellow",
-    background: "#672DA4",
-    display: "flex",
-    justifyContent: "space-around",
-  },
+  listaNav:{
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  }
 };
