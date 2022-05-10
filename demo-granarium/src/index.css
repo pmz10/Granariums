@@ -12,23 +12,25 @@ code {
     monospace;
 }
 
-.scanner h1{
+.scanner h3{
   color: #252832;
   font-size: 4rem;
   position: absolute;
+  display: flex;
+  align-items: center;
 }
 
-.scanner h1:before{
-  content: "Scanning....";
+.scanner h3:before{
+  content: "Cacahuate";
   position: absolute;
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-  border-right: 4px solid red;
-  box-shadow:0 0 10px 10px #ff0000;
+  border-right: 4px solid white;
+  box-shadow:0 0 10px 10px #f8f8fc;
   overflow: hidden;
-  color: red;
+  color: white;
   animation: scan 4s linear infinite;
 }
 @keyframes scan{

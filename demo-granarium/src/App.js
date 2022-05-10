@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./componets/Header";
+import { TextScaner } from "./componets/TextScaner";
 
 function App() {
   return (
@@ -7,12 +8,16 @@ function App() {
       <Header />
       <nav style={{background:'red'}}> 
         <ul style={myStyles.listaNav}>
-          <li style={{padding:'0px 10px 0px 10px ', border:'3px solid navy', listStyle:'none'}} href='#'>Opciones 1</li>
-          <li style={{padding:'0px 10px 0px 10px ', border:'3px solid navy', listStyle:'none'}}>Opciones 2</li>
-          <li style={{padding:'0px 10px 0px 10px ', border:'3px solid navy', listStyle:'none'}}>Opciones 3</li>
-          <li style={{padding:'0px 10px 0px 10px ', border:'3px solid navy', listStyle:'none'}}>Opciones 4</li>
+          <li style={myStyles.barraCajas} >Opciones 1</li>
+          <li style={myStyles.barraCajas}>Opciones 2</li>
+          <li style={myStyles.barraCajas}>Opciones 3</li>
+          <li style={myStyles.barraCajas}>Opciones 4</li>
         </ul>
       </nav>
+      <section style={myStyles.apartado}>
+        <article className="border">Este articulo es especializado para distintos casos</article>
+        <article style={{background:'red'}}><TextScaner/></article>
+      </section>
     </div>
   );
 }
@@ -24,5 +29,17 @@ let myStyles = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-around',
+  },
+
+  apartado:{
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+
+  barraCajas:{
+    padding:'0px 10px 0px 10px ',
+     border:'3px solid navy',
+     listStyle:'none'
   }
 };
