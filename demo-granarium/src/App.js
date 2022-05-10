@@ -14,9 +14,9 @@ function App() {
           <li style={myStyles.barraCajas}>Opciones 4</li>
         </ul>
       </nav>
-      <section style={myStyles.apartado}>
-        <article className="border">Este articulo es especializado para distintos casos</article>
-        <article style={{background:'red'}}><TextScaner/></article>
+      <section style={{display:'flex', justifyContent:'space-around'}}>
+        <article >Este articulo es especializado para distintos casos</article>
+        <article ><TextScaner/></article>
       </section>
     </div>
   );
@@ -28,7 +28,7 @@ let myStyles = {
   listaNav:{
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
   },
 
   apartado:{
