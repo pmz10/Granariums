@@ -3,10 +3,29 @@ import Header from "./componets/Header";
 import { TextScaner } from "./componets/TextScaner";
 
 function App() {
+  let myStyles = {
+    listaNav:{
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+    },
+  
+    apartado:{
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-between'
+    },
+  
+    barraCajas:{
+      padding:'0px 10px 0px 10px ',
+       border:'3px solid white',
+       listStyle:'none'
+    }
+  };
   return (
     <div className="container-can">
       <Header colors="gold"/>
-      <Header colors="navy"/>
+      <Header colors="navy" coletra="white"/>
       <nav style={{background:'red'}}> 
         <ul style={myStyles.listaNav}>
           <li style={myStyles.barraCajas} >Opciones 1</li>
@@ -25,22 +44,4 @@ function App() {
 
 export default App;
 
-let myStyles = {
-  listaNav:{
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
 
-  apartado:{
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between'
-  },
-
-  barraCajas:{
-    padding:'0px 10px 0px 10px ',
-     border:'3px solid navy',
-     listStyle:'none'
-  }
-};
