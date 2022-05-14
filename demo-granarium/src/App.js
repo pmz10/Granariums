@@ -5,7 +5,8 @@ import { TextScaner } from "./componets/TextScaner";
 function App() {
   return (
     <div className="container-can">
-      <Header />
+      <Header colors="gold"/>
+      <Header colors="navy"/>
       <nav style={{background:'red'}}> 
         <ul style={myStyles.listaNav}>
           <li style={myStyles.barraCajas} >Opciones 1</li>
@@ -14,9 +15,9 @@ function App() {
           <li style={myStyles.barraCajas}>Opciones 4</li>
         </ul>
       </nav>
-      <section style={{display:'flex', justifyContent:'space-around'}}>
-        <article >Este articulo es especializado para distintos casos</article>
-        <article ><TextScaner/></article>
+      <section style={{display:'flex', flexWrap:'wrap', justifyContent:'space-around', height:'100%'}}>
+        <article style={{width: '30%',justifyItems:'center', fontSize:'2rem'}}>Este articulo es especializado para distintos casos</article>
+        <article style={{width: '30%', justifyItems:'center', fontSize:'2rem'}}><TextScaner/></article>
       </section>
     </div>
   );
