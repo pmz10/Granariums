@@ -8,7 +8,7 @@ export default function Header(props) {
 }
   return (
     <header style={myStyles.styHeader}>
-        <h1 className='text-center' style={{marginBottom: '0px', color: props.coletra}}>Componente Cabezera</h1>
+        <h1 className='text-center' style={{marginBottom: '0px', color: props.coletra}}>{props.texto}</h1>
     </header>
   )
 }

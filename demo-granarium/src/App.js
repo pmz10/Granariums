@@ -18,14 +18,14 @@ function App() {
   
     barraCajas:{
       padding:'0px 10px 0px 10px ',
-       border:'3px solid white',
+       border:'3px solid silver',
        listStyle:'none'
     }
   };
   return (
     <div className="container-can">
-      <Header colors="gold"/>
-      <Header colors="navy" coletra="white"/>
+      <Header colors="gold" texto="Bienvenido"/>
+      <Header colors="navy" coletra="white" texto="Entresar"/>
       <nav style={{background:'red'}}> 
         <ul style={myStyles.listaNav}>
           <li style={myStyles.barraCajas} >Opciones 1</li>
