@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Header(props) {
   let myStyles = {
-    styHeader :{
+    styHeader:{
       background: props.colors
     },
 }
